@@ -4,7 +4,7 @@ const router = express.Router();
 
 
 // Home page route.
-router.get('/index', function (req, res) {
+router.get('/', function (req, res) {
     burger.all(function (burgerData) {
       console.log(burgerData)
       res.render("index");
